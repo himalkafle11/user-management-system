@@ -62,9 +62,10 @@ class UserController extends Controller
      * @param  \App\Models\OurUser  $ourUser
      * @return \Illuminate\Http\Response
      */
-    public function edit(OurUser $ourUser)
+    public function edit(OurUser $ourUser,$id)
     {
-        //
+        $users=OurUser::find($id);
+        return view('editUsers',['users'=>$users]);
     }
 
     /**
@@ -74,9 +75,15 @@ class UserController extends Controller
      * @param  \App\Models\OurUser  $ourUser
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, OurUser $ourUser)
+    public function update(Request $request, OurUser $ourUser,$id)
     {
-        //
+        $users=OurUser::find($id);
+        $users->user_name=$request->get('name');
+        $users->user_address=$request->get('address');
+        $users->user_contact=$request->get('contact');
+        $users->save();
+
+        return redirect('showUsers');
     }
 
     /**
@@ -85,8 +92,10 @@ class UserController extends Controller
      * @param  \App\Models\OurUser  $ourUser
      * @return \Illuminate\Http\Response
      */
-    public function destroy(OurUser $ourUser)
+    public function destroy(OurUser $ourUser,$id)
     {
-        //
+        $ourUser=OurUser::find($id);
+        $ourUser->delete();
+        return redirect('showUsers');
     }
 }

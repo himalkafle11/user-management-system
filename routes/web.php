@@ -21,3 +21,7 @@ Route::get('/', function () {
 Route::post('store',[UserController::class,'store']);
 
 Route::get('showUsers',[UserController::class,'show']);
+
+Route::get('delete/{id}',[UserController::class,'destroy']);
+Route::get('edit/{id}',[UserController::class,'edit']);
+Route::post('update/{id}',[UserController::class,'update']);

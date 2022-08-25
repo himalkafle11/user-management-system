@@ -12,10 +12,12 @@
     <div class="container">
         <table class="table table-bordered shadow text-center table-striped">
             <tr>
-                <th>UserId</th>
-                <th>UserName</th>
-                <th>UserAddress</th>
-                <th>UserContact</th>
+                <th>User-Id</th>
+                <th>User-Name</th>
+                <th>User-Address</th>
+                <th>User-Contact</th>
+                <th>Delete-User</th>
+                <th>Update-User</th>
             </tr>
             @foreach ($users as $user )
             <tr>
@@ -23,6 +25,8 @@
                 <td>{{$user->user_name }}</td>
                 <td>{{$user->user_address }}</td>
                 <td>{{$user->user_contact }}</td>
+                <td><a href="/delete/{{ $user->id }}" class="btn btn-danger">Delete User</a></td>
+                <td><a href="/edit/{{ $user->id }}" class="btn btn-success">Update User</a></td>
             </tr>
                 
             @endforeach
