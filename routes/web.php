@@ -15,7 +15,7 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', function () {
-    return view('userpage');
+    return view('welcome');
 });
 
 Route::post('store',[UserController::class,'store']);

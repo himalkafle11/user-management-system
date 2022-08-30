@@ -15,17 +15,17 @@
             @csrf
             <div class="mb-3">
                 <label><b>UserName:</b></label>
-                <input type="text" name="name" class="form-control" value={{$users->user_name }}>
+                <input type="text" name="name" class="form-control" required="true" value={{$users->user_name }}>
             </div>
             <div class="mb-3">
                 <label><b>Address:</b></label>
-                <input type="text" name="address" class="form-control"
+                <input type="text" name="address" required="true" class="form-control"
                 value={{$users->user_address }}
                 >
             </div>
             <div class="mb-3">
                 <label><b>Contact no:</b></label>
-                <input type="number" name="contact" class="form-control"
+                <input type="number" name="contact" required="true" class="form-control"
                 value={{$users->user_contact }}
                 >
             </div>
