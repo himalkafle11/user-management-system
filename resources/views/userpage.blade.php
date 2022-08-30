@@ -16,18 +16,23 @@
             @csrf
             <div class="mb-3">
                 <label><b>UserName:</b></label>
-                <input type="text" name="name" class="form-control">
+                <input type="text" name="name" class="form-control" autocomplete="off">
             </div>
             <div class="mb-3">
                 <label><b>Address:</b></label>
-                <input type="text" name="address" class="form-control">
+                <input type="text" name="address" class="form-control" autocomplete="off">
             </div>
             <div class="mb-3">
                 <label><b>Contact no:</b></label>
-                <input type="number" name="contact" class="form-control">
+                <input type="number" name="contact" class="form-control" autocomplete="off">
             </div>
-            <input type="submit" name="insert" value="Add User" class="btn btn-primary">
+            <input type="submit" name="insert" value="Add User" class="btn btn-primary" autocomplete="off">
+            
         </form>
+        <div class="mt-3">
+            <a href="{{ url('showUsers') }}" class="btn btn-xs btn-info pull-right">Show Users</a>
+        </div>
+
     </div>
 </body>
 </html>

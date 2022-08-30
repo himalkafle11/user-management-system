@@ -31,6 +31,8 @@
                 
             @endforeach
         </table>
+        <a href="{{ url('userpage') }}" class="btn btn-xs btn-info pull-right">Create New User</a>
+
     </div>
 </body>
 </html>

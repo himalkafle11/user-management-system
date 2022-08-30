@@ -20,6 +20,10 @@ Route::get('/', function () {
 
 Route::post('store',[UserController::class,'store']);
 
+Route::get('userpage',function(){
+    return view('userpage');
+});
+
 Route::get('showUsers',[UserController::class,'show']);
 
 Route::get('delete/{id}',[UserController::class,'destroy']);
