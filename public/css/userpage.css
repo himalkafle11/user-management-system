@@ -1,0 +1,23 @@
+
+
+.userpage{
+    width: 80vw;
+    height: 80vh;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    background-color: red;
+    padding: 24px;
+}
+
+.heading{
+    margin: 48px 0 48px 0;
+    text-align: center;
+}
+
+.inputForm{
+    padding: 24px;
+}
+
+.showUsers{
+    padding: 24px;
+}
