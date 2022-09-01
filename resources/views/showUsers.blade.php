@@ -34,5 +34,6 @@ integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1
             @endforeach
         </table>
         <a href="{{ url('userpage') }}" class="btn btn-xs btn-info pull-right">Create New User</a>
+        <a href="{{ url('/') }}" class="btn btn-xs btn-warning pull-right pl-3">LogOut of System</a>
 </body>
 </html>

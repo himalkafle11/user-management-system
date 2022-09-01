@@ -34,7 +34,10 @@ crossorigin="anonymous">
                     value={{$users->user_contact }}
                     >
                 </div>
-                <input type="submit" name="Update" value="Update" class="btn btn-success mt-3 mb-5" onclick= 'return confirm("Do you want to update?")'>
+                <input type="submit" name="Update" value="Update" class="btn btn-success mt-3 " onclick= 'return confirm("Do you want to update?")'>
+                <div >
+                    <a href="{{ url('showUsers') }}" class="btn btn-xs btn-warning pull-right mt-3 mb-6">Return Back</a>
+                </div>
             </form>
         </div>
     </main>
