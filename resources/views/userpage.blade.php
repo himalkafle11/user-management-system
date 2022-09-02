@@ -22,6 +22,10 @@
                     <label><b>Address:</b></label>
                     <input type="text" name="address" class="form-control" required="true" autocomplete="off">
                 </div>
+                <div class="mb-5">
+                    <label><b>Email:</b></label>
+                    <input type="email" name="email" class="form-control" required="true" autocomplete="off">
+                </div>
             <div class="mb-5">
                 <label><b>Contact no:</b></label>
                 <input type="number" name="contact" class="form-control" autocomplete="off">

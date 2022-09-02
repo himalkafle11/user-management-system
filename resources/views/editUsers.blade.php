@@ -29,6 +29,12 @@ crossorigin="anonymous">
                     >
                 </div>
                 <div class="mb-4">
+                    <label><b>Email:</b></label>
+                    <input type="email" name="email" required="true" class="form-control"
+                    value={{$users->user_email }}
+                    >
+                </div>
+                <div class="mb-4">
                     <label><b>Contact no:</b></label>
                     <input type="number" name="contact" required="true" class="form-control"
                     value={{$users->user_contact }}
@@ -36,7 +42,7 @@ crossorigin="anonymous">
                 </div>
                 <input type="submit" name="Update" value="Update" class="btn btn-success mt-3 " onclick= 'return confirm("Do you want to update?")'>
                 <div >
-                    <a href="{{ url('showUsers') }}" class="btn btn-xs btn-warning pull-right mt-3 mb-6">Return Back</a>
+                    <a href="{{ url('showUsers') }}" class="btn btn-xs btn-warning pull-right mt-3 mb-3">Return Back</a>
                 </div>
             </form>
         </div>

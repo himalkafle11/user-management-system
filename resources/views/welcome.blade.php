@@ -9,10 +9,11 @@
 </head>
 <body>
     <div class="container">
-
             <h1 class="heading">User Management System</h1>
-            <div class="login">
+            <div class="pages">
+                <a class="loginBtn" href="{{ url('login') }}" class="btn btn-xs btn-info pull-right">Log into the system</a>
                 <a class="loginBtn" href="{{ url('userpage') }}" class="btn btn-xs btn-info pull-right">Enter the system</a>
+                <a class="registerBtn" href="{{ url('register') }}" >Register the user</a>
             </div>
     </div>
 </body>

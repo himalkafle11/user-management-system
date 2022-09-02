@@ -18,6 +18,7 @@ integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1
                 <th>User-Id</th>
                 <th>User-Name</th>
                 <th>User-Address</th>
+                <th>User-Email</th>
                 <th>User-Contact</th>
                 <th>Delete-User</th>
                 <th>Update-User</th>
@@ -27,6 +28,7 @@ integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1
                 <td>{{ $user->id }}</td>
                 <td>{{$user->user_name }}</td>
                 <td>{{$user->user_address }}</td>
+                <td>{{$user->user_email }}</td>
                 <td>{{$user->user_contact }}</td>
                 <td><a href="/delete/{{ $user->id }}" class="btn btn-danger" onclick= 'return confirm("Delete the user?")'>Delete User</a></td>
                 <td><a href="/edit/{{ $user->id }}" class="btn btn-success">Update User</a></td>
