@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Laravel</title>
+        <title>User Management System</title>
         <link rel="stylesheet" href="css/register.css">
 
     </head>
@@ -11,22 +11,30 @@
         <section class="form-section" >
             <main class="main">
                 <h1 class="register">Register Form</h1>
-                <form method="POST" action="/register">
+                <form method="POST" action="/store">
                     @csrf
-                    <div class="input-tags">
-                        <label for="name">
-                            Name:
-                        </label>
-                        <div class="input-tag">
-                            <input type="text" name="name" id="name" required autocomplete=off>
-                        </div>
-                    </div>
                     <div class="input-tags">
                         <label for="username">
                             Username:
                     </label>
                     <div class="input-tag">
-                        <input type="text" name="username" id="username" required autocomplete=off>
+                        <input type="text" name="name" id="name" required autocomplete=off>
+                    </div>
+                </div>
+                <div class="input-tags">
+                        <label for="address">
+                            Address:
+                    </label>
+                    <div class="input-tag">
+                        <input type="text" name="address" id="address" required autocomplete=off>
+                    </div>
+                </div>
+                <div class="input-tags">
+                        <label for="username">
+                            Contact no:
+                    </label>
+                    <div class="input-tag">
+                        <input type="number" name="contact" id="contact" required autocomplete=off>
                     </div>
                 </div>
                 <div class="input-tags">

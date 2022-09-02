@@ -7,6 +7,13 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
+    public function loginUser(){
+        return view('loginuser');
+    }
+
+    public function registerUser(){
+        return view('registeruser');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -38,12 +45,14 @@ class UserController extends Controller
         $user = new OurUser;
         $user->user_name=$request->get('name');
         $user->user_address=$request->get('address');
-        $user->user_email=$request->get('email');
         $user->user_contact=$request->get('contact');
+        $user->user_email=$request->get('email');
+        $user->user_password=$request->get('password');
         $user->save();
 
-        return view('userpage');
+        return redirect('/');
     }
+
 
     /**
      * Display the specified resource.

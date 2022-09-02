@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Laravel</title>
+        <title>User Management System</title>
         <link rel="stylesheet" href="css/register.css">
 
     </head>
@@ -19,14 +19,6 @@
                     </label>
                     <div class="input-tag">
                         <input type="text" name="username" id="username" required autocomplete=off>
-                    </div>
-                </div>
-                <div class="input-tags">
-                        <label for="email">
-                            Email:
-                    </label>
-                    <div class="input-tag">
-                        <input type="email" name="email" id="email" required autocomplete=off>
                     </div>
                 </div>
                 <div class="input-tags">
